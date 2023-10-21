@@ -1,0 +1,304 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}body{
+  width: 100%;
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  background-image: url(./wallpaper.png); 
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.bodyContainer{
+  width: 100%;
+  min-height: 100vh;
+}
+body,.bodyContainer,.headerContainer,.menu,.from,.heading,.Hi,.logReg,.name,.navbar{
+  font-family: 'Roboto',sans-serif;
+}
+
+ 
+ .headerContainer{
+    background-color: rgba(255, 0, 0, 0.099);
+    height: 20vh;
+    max-width: 100%;
+    border:1px solid rgb(6, 242, 246);
+    
+ }
+ .navbar{
+   height: 9.9%;
+   width:99.9%;
+   display: block;
+ }
+ .navbar menu{
+   float:left;
+   width: 80%;
+   /* margin:0px 0px 0px 20px; */
+   display:block;
+   overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+   
+ }
+ 
+ .navbar logReg{
+   float:right;
+   width: 20%;
+   margin:0px 10px 0px 0px;
+   display: block;
+ }
+ .menu li{
+  
+    float: left;
+  color: black;
+  text-align: center;
+  padding: 5px;
+list-style: none;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 4px;
+ }
+
+ .menu li a{
+  color: aqua;
+  display: block;
+  text-decoration: none;
+  
+ }
+ 
+ .menu li a:hover{
+  color:rgb(136, 232, 11);
+  border-bottom: 2px solid rgba(89, 244, 244, 0.518);
+ }
+ /* Style the active/current link*/
+.menu li a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+ .logReg li{
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 5px;
+list-style: none;
+  font-size: 12px;
+  line-height: 20px;
+  border-radius: 4px;
+ }
+ .logReg li a{
+  color: aqua;
+  /* text-align: center; */
+  display: block;
+  text-decoration: none;
+ }
+ .logReg li a:hover{
+  color:rgb(136, 232, 11);
+  border-bottom: 2px solid rgba(89, 244, 244, 0.518);
+ }
+ .menu li a.active {
+  background-color: dodgerblue;
+  color: white;}
+
+ .heading{
+   text-align: center;
+   height: 9.9%;
+   width: 99.9%;
+   display: flex;
+   margin-left: 20%;
+   margin-bottom: 10px;
+ }
+ .heading h1{
+  color: white;
+  font-size: 50px;
+  font-weight: 300;
+ }
+ /* -----------------------------------index.php main content----------------- */
+ .mainContainer p{
+  font-size: 20px;
+  color: aliceblue;
+  display:inline-flex;
+  margin-bottom: 15px;
+  padding:10px;
+  padding-left: 12px;
+  margin-left:10%;
+  
+ }
+ .mainContainer p span{
+  font-size: 50px;
+  color: rgb(235, 155, 116);
+  font-weight: 500;
+  display:inline-flex;
+  margin-left: 40px;
+  padding: 0px;
+  margin-top:40px;
+ }
+ 
+  
+  /* -------------------------Project----------------- */
+#project{
+  padding: 50px 0;
+}
+.container{
+  padding:10px 10% ;
+}
+.container p{
+  display: inline-flex;
+}
+.container p .btn{
+  display: inline-block;
+  margin: 50px ;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px ;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #FFF;
+}
+.project-list{
+  display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 35px;
+    margin-top: 50px;
+}
+.project{
+  border-radius: 10px;
+   position: relative;
+   overflow: hidden;
+}
+.project img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+transition: transform 0.5s;
+}
+.layer{
+  width: 100%;
+   height: 100%;
+   background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+   border-radius: 10px;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding: 0 40px;
+   text-align: center;
+   font-size: 14px;
+   transition: height 0.5s; 
+}
+.layer h3{
+  font-weight:500 ;
+  margin-bottom:20px ;
+  color: #f1f1f1;
+}
+.layer a{
+  margin-top:20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;  
+}
+.layer p{
+  color: #FFF;
+}
+.project:hover img{
+  transform:scale(1.1);
+  }
+  .project:hover .layer{
+     height: 100%;
+  
+  }
+  .btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px ;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #FFF;
+ }
+ .btn:hover{
+    background:#ff004f ;
+ }
+
+/* -------------------------------left side nav---------------------------- */
+
+
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 600px) {
+  .menu a {
+    float: none;
+    display:none;
+    text-align: left;
+  }
+  .logReg a {
+    float: none;
+    display:none;
+  }
+  .heading h1{
+    font-size: 39px;
+  }
+  
+  }
+ 
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+
+@media screen and (max-width: 300px){
+  .heading h1{
+    font-size: 27px;
+
+  } 
+  .heading{
+    margin-left: auto;
+  }
+  
+}
+@media screen and (max-width: 832px){
+  .heading h1{
+    font-size: 40px;
+  }
+  .heading{
+    margin-left: auto;
+  text-align: center;
+  }
+  
+}

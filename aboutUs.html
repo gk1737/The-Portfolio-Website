@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="./aboutme.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="bodyContainer">
+        <div class="headerContainer">
+        <div class="navbar">
+            <div class="menu">
+                <li><a href="./index.php">HOME</a></li>
+                <li><a href="./aboutUs.html">ABOUT ME</a></li>
+                <li><a href="./Project.html">PROJECTS</a></li>
+                <li><a href="./contactUs.html">CONTACT US</a></li>
+            </div>
+            <div class="logReg">
+                <li><a href="./Login.php">LOG IN</a></li>
+                <li><a href="./SignUp.php">SIGN UP</a></li>
+            </div>
+        </div>
+        <div class="heading">
+            <h1>THE PORTFOLIO WEBSITE</h1>
+        </div>
+    </div>
+    <div class="mainContainer">
+     <div class="about_container">
+        <div class="about_contents">
+            <!--Image section start-->
+            <section class="imageSection">
+                <img src="./gk.photo (1).jpg" alt="">
+            </section>
+            <!--Image section ends-->
+
+            <!--Info Section Starts-->
+            <section class="infoSection">
+                <h1>About Me</h1>
+                <h2>Professional Frontend  Web developer</h2>
+                <p>I am a Front-End web developer. I can provide clean code and pixel perfect design.
+                    I also make the website more an more interactive with web animations. We make every thing responsive on 
+                    the website.A responsive design makes your website accessible to all users,regardless 
+                    of their device.
+                </p>
+                
+                <div class="personalInfo">
+                    <div><span>Name:</span><span>Gyaneesh Upadhyay</span></div>
+                    <div><span>Age:</span><span>21 Years</span></div>
+                    <div><span>Email:</span><span>gk1737409@gmail.com</span></div>
+                    <div><span>Address:</span><span>Pratapgarh, Uttar Pradesh</span></div>
+ 
+                </div>
+
+                <hr>
+               
+                <div class="button">
+                    <button><a href="./ResumeGyaneesh.pdf">Download CV</a></button>
+                </div>
+            </section>
+          
+
+            <!--Skill Section Starts-->
+            <section class="skillSection">
+                
+                 <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+                 </div>
+                 <div class="tab-contents active-tab" id="skills">
+                   
+                    <div class="skill">
+                        <div class="subject">Hard Work</div>
+                        <div class="progress_bar">
+                         <div class="progress_line" value="94%" style="max-width:94%"></div>
+                        </div>
+                     </div>
+                     <div class="skill">
+                        <div class="subject">Web Designing</div>
+                        <div class="progress_bar">
+                         <div class="progress_line" value="75%" style="max-width: 75%"></div>
+                        </div>
+                     </div>
+                     <div class="skill">
+                         <div class="subject">Creativity</div>
+                         <div class="progress_bar">
+                          <div class="progress_line" value="73%" style="max-width: 73%"></div>
+                         </div>
+                      </div>
+                      <div class="skill">
+                         <div class="subject">Web Development</div>
+                         <div class="progress_bar">
+                          <div class="progress_line" value="85%" style="max-width: 85%"></div>
+                         </div>
+                      </div>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023-current</span><br>Practicing of project for jop application</li>
+                        <li><span>Event leader(2019)</span><br>We had lead an even in my collage</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Bachelor of Computer Application</span><br>2021-2023(Pursuing)</li>
+                        <li><span>3-Year Diploma(Polytechnic)</span><br>Computer Science and Engineering</li>
+                        <li><span>High School</span><br>2017</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+</div>
+</div>
+
+            </section>
+            <!--Skill section ends-->
+        </div>
+     </div>
+    </div>
+</div> 
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    // var tablinks=documList
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+ </script>
+</body>
+</html>
